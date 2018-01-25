@@ -6,4 +6,4 @@
 
 ## Picture
 
-![Screenshot](autoshut.PNG)
+![Screenshot](autoshut.png)
