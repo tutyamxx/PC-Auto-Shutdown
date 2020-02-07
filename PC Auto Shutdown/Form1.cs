@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace PC_Auto_Shutdown
@@ -18,7 +12,7 @@ namespace PC_Auto_Shutdown
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked == true)
             {
@@ -40,17 +34,17 @@ namespace PC_Auto_Shutdown
                 TimerSeconds = 7200;    // 2 hours
             }
 
-            MessageBox.Show("Okay mate, timer started!");
+            MessageBox.Show("Okay mate 🙋‍♂️, timer started!");
             System.Diagnostics.Process.Start("shutdown", "-s -t " + TimerSeconds);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("shutdown", "/a");
-            MessageBox.Show("Timers are resetted!");
+            MessageBox.Show("Timers are reset!");
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             Form2 WAT = new Form2();
             WAT.Show();

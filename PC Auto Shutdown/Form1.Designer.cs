@@ -36,8 +36,8 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ButtonSchedule = new System.Windows.Forms.Button();
+            this.ButtonReset = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -122,29 +122,29 @@
             this.toolTip1.SetToolTip(this.radioButton1, "Turn off PC after 15 minutes");
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // ButtonSchedule
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(9, 410);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 26);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Schedule";
-            this.toolTip1.SetToolTip(this.button1, "Start the timer, mate :)");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonSchedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSchedule.Location = new System.Drawing.Point(9, 410);
+            this.ButtonSchedule.Name = "ButtonSchedule";
+            this.ButtonSchedule.Size = new System.Drawing.Size(101, 26);
+            this.ButtonSchedule.TabIndex = 2;
+            this.ButtonSchedule.Text = "Schedule";
+            this.toolTip1.SetToolTip(this.ButtonSchedule, "Start the timer, mate :)");
+            this.ButtonSchedule.UseVisualStyleBackColor = true;
+            this.ButtonSchedule.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // ButtonReset
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(146, 410);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 26);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Reset";
-            this.toolTip1.SetToolTip(this.button2, "Reset the timers !");
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonReset.Location = new System.Drawing.Point(146, 410);
+            this.ButtonReset.Name = "ButtonReset";
+            this.ButtonReset.Size = new System.Drawing.Size(101, 26);
+            this.ButtonReset.TabIndex = 3;
+            this.ButtonReset.Text = "Reset";
+            this.toolTip1.SetToolTip(this.ButtonReset, "Reset the timers !");
+            this.ButtonReset.UseVisualStyleBackColor = true;
+            this.ButtonReset.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -157,7 +157,7 @@
             this.button3.Text = "?";
             this.toolTip1.SetToolTip(this.button3, "What is this button? Could be a surprise :)");
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Form1
             // 
@@ -166,8 +166,8 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(257, 448);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonReset);
+            this.Controls.Add(this.ButtonSchedule);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -187,8 +187,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ButtonSchedule;
+        private System.Windows.Forms.Button ButtonReset;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
